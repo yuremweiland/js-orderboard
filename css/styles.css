@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body.orders-board {
+    overflow: hidden;
+}
+
+body.enable-advert {
+    display: flex;
+}
+
+body.enable-advert .main-container {
+    width: 65vw !important;
+}
+
+body.enable-advert .advert-container {
+    display: flex !important;
+    background: #eee;
+    width: 35vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+body.enable-advert .advert-container img#advertImageEl {
+    width: 100%;
+    height: 100%;
+}
+
+.advert-container {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.status-container {
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.status-container h2 {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    padding: 20px;
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+}
+
+.processing-orders h2 {
+    background: orange;
+}
+
+.ready-orders h2 {
+    background: green;
+}
+
+.orders-container {
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.orders-container .order {
+    width: calc(50% - 40px);
+    padding: 0 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.orders-container .order p {
+    font-size: 65px;
+    margin: 15px 0;
+    white-space: nowrap;
+}
+
+#readyOrders .last-ready {
+    background: #ff0;
+}
+
+.panel-container {
+    margin: 20px auto;
+    width: 980px;
+}
+
+.panel-container h2 {
+    margin: 0;
+}
+
+.panel-table-headers {
+    margin-top: 15px;
+}
+
+.panel-table {
+    border: 1px #ccc solid;
+    width: 100%;
+}
+
+.panel-table td, th {
+    border-collapse: collapse;
+    border: 1px #ccc solid;
+    padding: 8px;
+}
+
+.panel-table td.center {
+    text-align: center;
+}
+
+.panel-table .order-number input {
+    width: calc(100% - 87px);
+}
+
+.enable-advert-panel {
+    margin: 10px 0;
+    user-select: none;
+    text-align: right;
+}
+
+.enable-advert-panel .enable-advert-panel__info {
+    border: 1px #ccc solid;
+    background: lightyellow;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-top: 4px;
+}
+
+#setTestOrders {
+    float: right;
+    margin: 20px 0;
+}
